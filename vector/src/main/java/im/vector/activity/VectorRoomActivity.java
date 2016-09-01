@@ -736,6 +736,10 @@ public class VectorRoomActivity extends MXCActionBarActivity implements MatrixMe
         intent.removeExtra(EXTRA_EXPAND_ROOM_HEADER);
 
         Log.d(LOG_TAG, "End of create");
+
+        startIpCall(true);
+
+        VectorRoomActivity.this.finish();
     }
 
     @Override
