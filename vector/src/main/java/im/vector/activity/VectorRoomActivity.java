@@ -737,9 +737,10 @@ public class VectorRoomActivity extends MXCActionBarActivity implements MatrixMe
 
         Log.d(LOG_TAG, "End of create");
 
-        startIpCall(true);
-
-        VectorRoomActivity.this.finish();
+        if (true) { // juniorMode
+            startIpCall(true);
+            VectorRoomActivity.this.finish();
+        }
     }
 
     @Override

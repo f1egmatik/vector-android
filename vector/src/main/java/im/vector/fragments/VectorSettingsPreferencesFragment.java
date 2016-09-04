@@ -347,6 +347,8 @@ public class VectorSettingsPreferencesFragment extends PreferenceFragment {
             }
         });
 
+        final SwitchPreference juniorMode = (SwitchPreference)preferenceManager.findPreference(getActivity().getResources().getString(R.string.jr_use_settings));
+
         mUserSettingsCategory = (PreferenceCategory)getPreferenceManager().findPreference(getResources().getString(R.string.settings_user_settings));
         mPushersSettingsCategory = (PreferenceCategory)getPreferenceManager().findPreference(getResources().getString(R.string.settings_notifications_targets));
         mIgnoredUserSettingsCategory = (PreferenceCategory)getPreferenceManager().findPreference(getResources().getString(R.string.settings_ignored_users));

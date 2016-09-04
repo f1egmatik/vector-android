@@ -131,6 +131,10 @@
             android:title="@string/ga_use_settings"
             android:key="@string/ga_use_settings"/>
 
+        <im.vector.preference.VectorSwitchPreference
+            android:title="@string/jr_use_settings"
+            android:key="@string/jr_use_settings"/>
+
         <Preference
             android:key="application_info_link"
             android:title="@string/settings_title_app_info_link"
